@@ -1,0 +1,146 @@
+body {
+    margin:0px;
+    display:grid;
+}
+:root {
+    --primary:rgb(91, 91, 91);
+    --secondary:rgb(53, 53, 53);
+}
+#sub-body {
+    background-color:var(--secondary);
+    max-width:1230px;
+    height:100vh;
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+    place-content: center;
+    background-image: url(https://picsum.photos/1230/600);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+#w-t-box {
+    display:grid;
+}
+#weather-body {
+    width:388.5px;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.453);
+    margin: 10px;
+    border-radius: 10px;
+    height: 280px;
+    display:grid;
+    place-content:center left;
+}
+#tempc {
+    display:flex;
+}
+
+#location {
+    font-family: sans-serif;
+    color:white;
+    margin-left:20px;
+    font-size: 30px;
+    margin-top:10px;
+}
+#temp {
+    font-size:40px;
+    color:white;
+    margin-left:20px;
+    margin-top:10px;
+}
+#humidity{
+    color:white;
+    margin-left:20px;
+    font-size: 14px;
+}
+#w-speed{
+    color:white;
+    margin-left:20px;
+    font-size: 14px;
+}
+#w-type{
+    color:white;
+    margin-left:20px;
+    font-size: 19px;
+    margin-top:30px;
+}
+#icon{
+    font-size:12px;
+    color:white;
+    margin-left:20px;
+    font-size: 19px;
+}
+#humidity, #w-speed, #w-type , #icon, #location, #temp {
+    display:none;
+}
+#lBox {
+    display:grid; 
+    place-content: center;
+}
+#loader {
+    width:25px;
+    height:25px;
+    border:3px solid rgb(255, 255, 255);
+    border-top:3px solid rgb(3, 175, 187);
+    border-radius: 50%;
+    animation:load 0.2s linear infinite;
+    display:grid;
+}
+@keyframes load {
+    100%{transform:rotateZ(360deg)}
+}
+#search-wrapper {
+    margin:opx;
+    display:flex;
+    padding:10px;
+    border-radius:4em;
+    margin-left:300px;
+    animation-name:none;
+    animation-duration:none;
+}
+.search-icon1 {
+    width:25px;
+    
+}
+.search-icon2 {
+    width:25px;
+    animation-name:none;
+    animation-duration:none;
+    transform-origin: top;
+    display:none;
+}
+button[type="submit"] {
+    border:none;
+    background-color: rgb(226, 226, 226);
+    border-radius:10px;
+    display:none;
+    
+}
+
+.search {
+    width:300px;
+    height:35px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    display:none;
+    animation-name:none;
+    animation-duration:none;
+}
+.search:focus {
+    outline: none;
+}
+@keyframes open {
+    0%{width:0px;}
+    80%{width:305px;}
+    100%{width:300px;}
+}
+@keyframes close {
+    0%{margin-left:300px;}
+    80%{margin-left:0px;}
+    100%{margin-left:0px;}
+}
+@keyframes rotate {
+    100%{transform: rotateY(360deg);}
+}

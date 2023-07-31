@@ -1,0 +1,18 @@
+#weather-body {
+    max-width: 360px;
+    border-radius: 5px;
+    height:400px;
+}
+
+
+#location {
+    font-size: 30px;
+
+}
+#sub-body {
+    min-height:900px;
+    background-image: url(https://picsum.photos/1230/990);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+}
