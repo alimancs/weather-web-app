@@ -16,3 +16,7 @@
     background-size:cover ;
 
 }
+.search {
+    place-self:center;
+    width:260px;
+}
